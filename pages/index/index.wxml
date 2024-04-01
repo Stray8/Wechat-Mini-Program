@@ -1,0 +1,8 @@
+<view class="card">
+  <image class="main_img" mode="widthFix" src="../../img/main.png"></image>
+  <image class="ggbond" mode="widthFix" src="../../img/ggbond.jpg"></image>
+  <view class="info">
+    <view class="name">崩坏三</view>
+    <view>Caco3</view>
+  </view>
+</view>
