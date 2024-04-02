@@ -1,31 +1,21 @@
 /**index.wxss**/
 
-.card {
+.cource_card {
+  width: 50%;
   margin: 10px;
-  position: relative;
 }
 
-.main_img {
+.cource_card image {
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0 0 5px #999;
 }
 
-.ggbond {
-  width: 80px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-
-.info {
+.table1_1 {
   font-size: 20px;
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  color: #999;
 }
 
-.name {
-  font-weight: bold;
+.table1_2 {
+  font-size: 16px;
+  color: green;
 }
+

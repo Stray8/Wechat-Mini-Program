@@ -1,8 +1,14 @@
-<view class="card">
-  <image class="main_img" mode="widthFix" src="../../img/main.png"></image>
-  <image class="ggbond" mode="widthFix" src="../../img/ggbond.jpg"></image>
-  <view class="info">
-    <view class="name">崩坏三</view>
-    <view>Caco3</view>
+<view class="cource_card ">
+  <view>
+    <image src="../../img/main.png" mode="widthFix"></image>
   </view>
+  <view class="table1_1" mode="widthFix">人人都会小程序实战</view>
+  <view class="table1_2" mode="widthFix">免费</view>
 </view>
+<view class="cource_card">
+  <view>
+    <image src="../../img/main.png" mode="widthFix"></image>
+  </view>
+  <view class="table1_1" mode="widthFix">人人都会小程序实战</view>
+  <view class="table1_2" mode="widthFix">免费</view>
+</view> 
