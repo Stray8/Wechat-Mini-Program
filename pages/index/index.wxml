@@ -1,14 +1,66 @@
-<view class="cource_card ">
-  <view>
-    <image src="../../img/main.png" mode="widthFix"></image>
+<view class="body ">
+  <view class="head">开头</view>
+  <view class="list-wrap">
+    <scroll-view scroll-y="true"class="list">
+      <view class="list-scroll-view">
+        <view class="cource_card">
+          <view>
+            <image src="../../img/1.jpg" mode="widthFix"></image>
+          </view>
+          <view>人人都会小程序实战</view>
+          <view class="table1_2">免费</view>
+        </view>
+
+        <view class="cource_card">
+          <view>
+            <image src="../../img/2.jpg" mode="widthFix"></image>
+          </view>
+          <view>人人都会小程序实战</view>
+          <view class="table1_2">免费</view>
+        </view>
+
+        <view class="cource_card">
+          <view>
+            <image src="../../img/3.jpg" mode="widthFix"></image>
+          </view>
+          <view>人人都会小程序实战</view>
+          <view class="table1_2">免费</view>
+        </view>
+
+        <view class="cource_card">
+          <view>
+            <image src="../../img/1.jpg" mode="widthFix"></image>
+          </view>
+          <view>人人都会小程序实战</view>
+          <view class="table1_2">免费</view>
+        </view>
+
+        <view class="cource_card">
+          <view>
+            <image src="../../img/2.jpg" mode="widthFix"></image>
+          </view>
+          <view>人人都会小程序实战</view>
+          <view class="table1_2">免费</view>
+        </view>
+
+        <view class="cource_card">
+          <view>
+            <image src="../../img/3.jpg" mode="widthFix"></image>
+          </view>
+          <view>人人都会小程序实战</view>
+          <view class="table1_2">免费</view>
+        </view>
+
+      </view>
+    </scroll-view>
   </view>
-  <view class="table1_1" mode="widthFix">人人都会小程序实战</view>
-  <view class="table1_2" mode="widthFix">免费</view>
-</view>
-<view class="cource_card">
-  <view>
-    <image src="../../img/main.png" mode="widthFix"></image>
+  <view class="guide">
+    <view class="guide-item">
+      <view>
+        <image src="../../img/main.png" mode="widthFix"></image>
+      </view>
+      <view class="table1_2">首页</view>
+    </view>
+
   </view>
-  <view class="table1_1" mode="widthFix">人人都会小程序实战</view>
-  <view class="table1_2" mode="widthFix">免费</view>
 </view> 

@@ -1,8 +1,45 @@
 /**index.wxss**/
 
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.head {
+  background-color: #ddd;
+}
+
+.guide {
+  background-color: #ddd;
+}
+
+.list-wrap {
+  flex-grow: 1;
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.list-scroll-view {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin-left: 2vw;
+  margin-right: 2vw;
+
+}
 .cource_card {
-  width: 50%;
-  margin: 10px;
+  width: 47vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cource_card image {
@@ -10,12 +47,12 @@
   border-radius: 5px;
 }
 
-.table1_1 {
-  font-size: 20px;
-}
 
 .table1_2 {
-  font-size: 16px;
   color: green;
 }
 
+
+.guide-item image {
+  width: 10%;
+}
