@@ -3,12 +3,20 @@
     "pages/index/index"
   ],
   "window": {
+    "backgroundTextStyle":"light",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "测试项目",
+    "navigationBarTitleText": "ESP32_WIFI",
     "navigationBarBackgroundColor": "#ffffff"
   },
+
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-icon":"@vant/weapp/icon/index",
+    "van-popup":"@vant/weapp/popup/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index"
+  }
 }

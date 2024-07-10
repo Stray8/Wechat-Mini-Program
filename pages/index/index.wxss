@@ -1,58 +1,51 @@
 /**index.wxss**/
-
-.body {
+.head_box{
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  /* padding-top: 120rpx; */
 }
-
-.head {
-  background-color: #ddd;
+.head_box > image{
+  margin-left: 32rpx;
+  width: 100rpx;
+  height: 100rpx;
 }
-
-.guide {
-  background-color: #ddd;
+.head_box > view{
+  margin-left: 15rpx;
+  font-size: 38rpx;
+  font-weight: 600;
+  line-height: 100rpx;
 }
-
-.list-wrap {
-  flex-grow: 1;
-  position: relative;
+.weather_box{
+  height: 320rpx;
+  margin: 32rpx 32rpx 0;
+  box-shadow: 0 8rpx 20rpx 0 rgba(0, 0, 0, 0.3);
+  border-radius: 32rpx;
 }
-
-.list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.welcome_text{
+  font-size: 30rpx;
+  color: #9fbcf9;
+  padding-top: 15rpx;
+  text-align: center;
 }
-
-.list-scroll-view {
+.w50{
+  width: 50%;
+}
+.temperature_text{
+  margin-top: 10rpx;
+  font-size: 80rpx;
+}
+.mqtt_box{
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  padding: 0 30rpx;
   justify-content: space-between;
-  margin-left: 2vw;
-  margin-right: 2vw;
-
+  height: 120rpx;
+  margin: 32rpx 32rpx 0;
+  box-shadow: 0 8rpx 20rpx 0 rgba(0, 0, 0, 0.3);
+  border-radius: 32rpx;
+  font-size: 45rpx;
+  line-height: 120rpx;
 }
-.cource_card {
-  width: 47vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.cource_card image {
-  width: 100%;
-  border-radius: 5px;
-}
-
-
-.table1_2 {
-  color: green;
-}
-
-
-.guide-item image {
-  width: 10%;
+.botton_style{
+  display: flex;
+  justify-content: space-around;
+  margin: 40prx 0;
 }

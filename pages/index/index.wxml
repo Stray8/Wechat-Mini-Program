@@ -1,66 +1,76 @@
-<view class="body ">
-  <view class="head">开头</view>
-  <view class="list-wrap">
-    <scroll-view scroll-y="true"class="list">
-      <view class="list-scroll-view">
-        <view class="cource_card">
-          <view>
-            <image src="../../img/1.jpg" mode="widthFix"></image>
-          </view>
-          <view>人人都会小程序实战</view>
-          <view class="table1_2">免费</view>
-        </view>
-
-        <view class="cource_card">
-          <view>
-            <image src="../../img/2.jpg" mode="widthFix"></image>
-          </view>
-          <view>人人都会小程序实战</view>
-          <view class="table1_2">免费</view>
-        </view>
-
-        <view class="cource_card">
-          <view>
-            <image src="../../img/3.jpg" mode="widthFix"></image>
-          </view>
-          <view>人人都会小程序实战</view>
-          <view class="table1_2">免费</view>
-        </view>
-
-        <view class="cource_card">
-          <view>
-            <image src="../../img/1.jpg" mode="widthFix"></image>
-          </view>
-          <view>人人都会小程序实战</view>
-          <view class="table1_2">免费</view>
-        </view>
-
-        <view class="cource_card">
-          <view>
-            <image src="../../img/2.jpg" mode="widthFix"></image>
-          </view>
-          <view>人人都会小程序实战</view>
-          <view class="table1_2">免费</view>
-        </view>
-
-        <view class="cource_card">
-          <view>
-            <image src="../../img/3.jpg" mode="widthFix"></image>
-          </view>
-          <view>人人都会小程序实战</view>
-          <view class="table1_2">免费</view>
-        </view>
-
-      </view>
-    </scroll-view>
-  </view>
-  <view class="guide">
-    <view class="guide-item">
+<view class="container">
+    <view class="head_box">
+      <image src="/img/weather.jpg" mode=""/>
+      <view>{{title}}</view>
+    </view>
+    <!-- 天气 -->
+    <view class="weather_box">
       <view>
-        <image src="../../img/main.png" mode="widthFix"></image>
+        <view class="welcome_text">
+          {{welcome}}
+        </view>
       </view>
-      <view class="table1_2">首页</view>
+      <view class="flex">
+        <view class="w50">
+          <image src="/img/qing.jpg" style="width: 300rpx; margin-top: 20rpx; margin-left: 20rpx;"
+          mode="widthFix"/>
+        </view>
+        <view>
+            <view class="location_text">
+              <image src="/img/qing.jpg" style="width: 16rpx; height: 16rpx;"/>
+              <text style="font-size: 30rpx;">{{location}}</text>
+            </view>
+            <view class="temperature_text">
+              <text>{{temperature}}°C</text>
+            </view>
+        </view>
+      </view>
+    </view>
+    <!-- MQTT -->
+    <view class="mqtt_box" bind:tap="openDialog">
+    <view>
+        <van-icon wx:if="{{!mqttConnectDialog}}"
+        name="arrow-down" />
+        <van-icon wx:if="{{mqttConnectDialog}}"
+        name="arrow-up"/>
+        MQTT服务器
+    </view>
+    <view style="color:{{isConnect? 'RGB(0,176,80)' : 'RGB(192,0,0)'}}">
+      {{isConnect? '已连接' : '未连接'}}
+    </view>
     </view>
 
-  </view>
-</view> 
+</view>
+
+<van-popup
+  show="{{ mqttConnectDialog }}"
+  position="bottom"
+  round
+  custom-style="height: 60%"
+  bind:close="onClose">
+  <view>
+    <van-cell-group>
+      <van-field
+        label="Address"
+        value="{{ value }}"
+      />
+      <van-field
+        label="Port"
+        value="{{ value }}"
+      />
+      <van-field
+        label="Username"
+        value="{{ value }}"
+      />
+      <van-field
+        label="Password"
+        value="{{ value }}"
+      />
+    </van-cell-group>
+    <view class="botton_style">
+      <van-button type="primary" color="#96baff" size="small">连接</van-button>
+      <van-button type="primary" color="#d9d9d9" size="small">断开</van-button>
+    </view>
+
+  </view>  
+</van-popup>
